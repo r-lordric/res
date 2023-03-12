@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>GRADE CARD</title>
+    <style type="text/css">
+        /*.wrapper {
+            width: 1290px;
+            margin: auto;
+        }*/
+
+        html,
+        body {
+            height: 100%;
+            font-family: arial;
+        }
+
+        td {
+            padding: 0;
+            margin: 0;
+        }
+
+        td p {
+            margin: 3px 0;
+        }
+
+        b {
+            font-weight: 600;
+        }
+
+        .b1 {
+            border: 2px solid #026B5C;
+        }
+
+        .b4 {
+            height: 110px;
+            margin-left: 723px;
+            margin-top: 5px;
+        }
+
+        .b5 {
+            width: 701px;
+            /*margin-left: 319px;*/
+            /*text-align: left;*/
+        }
+
+        .b6 {
+            text-align: left;
+            /*margin-left: 319px;*/
+        }
+
+        .b1 td {
+            border: 2px solid #026B5C;
+        }
+
+        .b2 {
+            border: 1px solid black;
+        }
+
+        .btmp {
+            border: 1px solid black;
+        }
+
+        .b2 td {
+            /*border-style: hidden;*/
+        }
+
+        .jb td,
+        .jb th {
+            padding: 2px;
+        }
+
+        .auto-style1 {
+            height: 6px;
+        }
+
+        p {
+            font-size: 12px;
+            padding: 5px 0;
+        }
+
+        .ins {
+            padding: 0 15px;
+        }
+
+        .img_hover {
+            position: relative;
+            text-align: left;
+        }
+
+        .sgpa table {
+            margin-right: unset;
+            /*text-align:right;*/
+
+        }
+
+        .sgpa {
+            padding: 10px 20px 0px 0px;
+        }
+
+        .innerdiv {
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 20px !important;
+            border: 2px solid #000;
+            width: 700px;
+            margin: auto;
+            height: auto;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        /*.gradepoint tr td{
+                padding:3px;
+            }*/
+        .ins p {
+            padding: 0;
+        }
+
+        .p10 p {
+            font-size: 8px;
+        }
+
+        .tab tr td {
+            border-right: 2px solid #026B5C;
+            border-left: 2px solid #026B5C;
+        }
+
+        .tab {
+            border: 2px solid #026B5C;
+        }
+
+        table {
+            margin: 0px auto;
+            border-collapse: collapse;
+        }
+
+        /*.p1data{
+                display:block;
+            }
+            .p2data{
+                display:none;
+            }*/
+
+        @page {
+            margin: 1px;
+        }
+
+        .b4,
+        .b5,
+        .b6 {
+            padding-left: 20px;
+        }
+
+        .details span {
+            color: #026B5C;
+            margin-right: 18px;
+            font-weight: 600;
+
+        }
+
+        .details tr td {
+            padding-bottom: 10px;
+        }
+
+        @media print {
+
+            html,
+            body {
+                height: 99%;
+            }
+
+            .innerdiv {
+                position: relative;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: 2px solid #000;
+                width: 700px;
+                margin: auto;
+                height: auto;
+            }
+
+            .b4,
+            .b5,
+            .b6 {
+                padding-left: 20px;
+            }
+
+            .b4 {
+                height: 110px;
+                /*margin-left: 465px;*/
+                margin-top: 5px;
+            }
+
+            .break {
+                display: none;
+            }
+
+            .b5 {
+                width: 701px;
+                /*margin-left: 65px;*/
+                text-align: left;
+            }
+
+            .b6 {
+                text-align: left;
+                /*margin-left: 65px;*/
+            }
+
+            /*html, body {
+                height: auto;
+            }*/
+
+            .abc .saimg {
+                width: 100% !important;
+                /*height:100%;*/
+            }
+
+            .wrapper {
+                width: auto;
+
+            }
+
+            /*.innerdiv{
+                width: calc(100% - 10px);
+                height: calc(100% - 10px);
+            }*/
+            a[href]:after {
+                content: none !important;
+            }
+
+            .btt {
+                display: none;
+            }
+
+
+            title {
+                display: none;
+            }
+
+            #header,
+            #nav,
+            .noprint,
+            #footer {
+                display: none;
+            }
+
+            /*.tempfields {
+                    display: none;
+                }
+             .b1 td{
+                 border-style:hidden;
+             }
+              .b2 td{
+                 border-style:hidden;
+             }*/
+            .btmp {
+                display: none;
+            }
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <form method="post" action="./Online_Grade_Card_Report.aspx?regdnofrom=222010301024&amp;ent=&amp;month=Nov"
+        id="form1">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="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" />
+        </div>
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EE02CBAE" />
+        </div>
+        <div id="inner">
+            <div class="wrapper">
+                <div class="abc img_hover" style="margin-top:30px;">
+                    <div class="innerdiv">
+                        <table style="border-radius: 10px;margin: 10px auto;width: 650px;" cellspacing="0"
+                            cellpadding="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <table width="200" class='sa-width'>
+                                        <tbody>
+                                            <tr style="text-align:right;"></tr>
+                                        </tbody>
+                                    </table>
+                                </tr>
+                                <tr>
+                                    <table width="650">
+                                        <tbody>
+                                            <tr style="text-align:center;">
+                                                <td> <img src="images/academiccert1.jpg" width="650" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </tr>
+                                <tr>
+                                    <table width="650" style='margin-bottom:20px'>
+                                        <tbody>
+                                            <tr style="text-align:center;">
+                                                <center style='margin-top:10px;'><b style="font-size:24px;"><span
+                                                            style='color:#026B5C'>GRADE CARD</span></b></center>
+                                                <center style='margin-top:10px;margin-left:5px;'><b
+                                                        style="font-size:19px;margin-top:10px;">B.Tech Degree
+                                                        Examination</b></center>
+                                                <center style="font-size:18px;"><b>V Semester, November 2022</b>
+                                                </center>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </tr>
+                                <tr>
+                                    <table width="650" class='mt-1 sa-width details' style='margin-bottom:20px'>
+                                        <tbody>
+                                            <tr>
+                                                <td style="width:50px;"> <span>Regd.No</span></td>
+                                                <td>:</td>
+                                                <td style='text-align:left'> &nbsp;222010301024</td>
+                                            <tr>
+                                                <td style="width:50px;"> <span>Name </span></td>
+                                                <td>:</td>
+                                                <td style='text-align:left'> &nbsp;Raj Nakshatra Sharma</td>
+                                                <td> &nbsp;</td>
+                                                <td> &nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:50px;"> <span>Branch</span></td>
+                                                <td> :</td>
+                                                <td style='text-align:left'> &nbsp;Computer Science and Engineering</td>
+                                                <td> &nbsp;</td>
+                                                <td> &nbsp;</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </tr>
+                                <tr>
+                                    <table width="650" class="tab mt-2 mb-2 sa-width">
+                                        <tbody>
+                                            <tr class="" style='border:2px solid #026B5C'>
+                                                <td style="text-align:left;padding:4px;width:105px;"> <span
+                                                        style='color:#026B5C;'><b>Course Code</b></span> </td>
+                                                <td style="text-align:center;"> <span style='color:#026B5C'><b>Name of
+                                                            the Course</b></span> </td>
+                                                <td style="text-align:center;"> <span
+                                                        style='color:#026B5C'><b>Credits</b> </span></td>
+                                                <td style="text-align:center;"> <span style='color:#026B5C'><b>Grade</b>
+                                                    </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p style="margin-left:10px;text-align:left;">19ECS331</p>
+                                                </td>
+                                                <td>
+                                                    <p style="margin-left:10px; text-align:left;">Software Engineering
+                                                    </p>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <p>4</p>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <p>B+</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p style="margin-left:10px;text-align:left;">19ECS305</p>
+                                                </td>
+                                                <td>
+                                                    <p style="margin-left:10px; text-align:left;">Cryptography and
+                                                        Network Security</p>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <p>3</p>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <p>C</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p style="margin-left:10px;text-align:left;">19ECS333</p>
+                                                </td>
+                                                <td>
+                                                    <p style="margin-left:10px; text-align:left;">Database Management
+                                                        Systems</p>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <p>4</p>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <p>C</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p style="margin-left:10px;text-align:left;">19ECS303</p>
+                                                </td>
+                                                <td>
+                                                    <p style="margin-left:10px; text-align:left;">Formal Languages and
+                                                        Automata Theory</p>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <p>3</p>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <p>B</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p style="margin-left:10px;text-align:left;">19ECS341</p>
+                                                </td>
+                                                <td>
+                                                    <p style="margin-left:10px; text-align:left;">Programming With R</p>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <p>3</p>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <p>A</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p style="margin-left:10px;text-align:left;">19EOE313</p>
+                                                </td>
+                                                <td>
+                                                    <p style="margin-left:10px; text-align:left;">Personality
+                                                        Development</p>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <p>3</p>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <p>O</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p style="margin-left:10px;text-align:left;">19ECE371</p>
+                                                </td>
+                                                <td>
+                                                    <p style="margin-left:10px; text-align:left;">Disaster Management
+                                                    </p>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <p>3</p>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <p>A</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p style="margin-left:10px;text-align:left;">19ECS391</p>
+                                                </td>
+                                                <td>
+                                                    <p style="margin-left:10px; text-align:left;">Comprehensive Skill
+                                                        Development IV</p>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <p>1</p>
+                                                </td>
+                                                <td style="text-align:center;">
+                                                    <p>A+</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </tr>
+                                <tr>
+                                    <div class='sgpa'>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <p style="font-size:15px;">SGPA </p>
+                                                    </td>
+                                                    <td>:</td>
+                                                    <td>8.2 <br /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p style="font-size:15px;">CGPA </p>
+                                                    </td>
+                                                    <td>:</td>
+                                                    <td>0 <br /></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </tr>
+                                <div class="b6"><span> <b>Printed On&nbsp;&nbsp;:</b>08-Feb-2023<br /></span></div>
+                                <div class="b5"><br />
+                                    <table style="width:650px;margin-left: 0px;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width:510px;"><span style="width:100px;">
+                                                        <b>Note:</b><br /><span style="font-size:12px;"><i>1.This is a
+                                                                digitally generated certificate. The format of this
+                                                                certificate may differ from the document issued by the
+                                                                University<br /></i></span></span><span
+                                                        style="width:100px;font-size:12px;"><i>2.For any clarification,
+                                                            please contact <a
+                                                                href="#">controllerofexaminations@gitam.edu</a><i></span>
+                                                </td>
+                                                <td style="width:100px;">
+                                                    <div style="width:100px;"><img src="images/DynamicQR.jpg"
+                                                            width="150" /></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div><br>
+            <div class='break'><br></div>
+        </div>
+
+    </form>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    function printpage() {
+        window.print()
+    }
+</script>
+
+</html>
